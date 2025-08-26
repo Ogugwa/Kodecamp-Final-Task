@@ -1,0 +1,87 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rasa:ital,wght@0,300..700;1,300..700&display=swap');
+
+body{
+   font-family: 'Poppins', sans-serif;
+}
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1rem;
+   color: #fff;
+   position: absolute;
+   top: 20px;
+   width: 100vw;
+   box-shadow: 0px 4px 16px 0px #0000001A;
+   backdrop-filter: blur(40px);
+}
+nav img{
+    width: 52.71px;
+    height: 48px;
+}
+nav ul{
+   list-style: none;
+   display: flex;
+   gap: 1rem;
+}
+nav a{
+   text-decoration: none;
+   color: #E67505;
+   font-weight: 400;
+   font-size: 18px;
+   font-style: normal;
+}
+nav a:hover{
+   color: #E67505;
+   /* text-decoration: none; */
+}
+nav button{
+   border: 1px solid #E67505;
+   color: #E67505;
+   background: none;
+   padding: 0.5rem 1rem;
+   border-radius: 12px;
+   cursor: pointer;
+}
+/* Hero styling */
+.hero{
+    background: url('./images/hero_bg_img.png') no-repeat center center/cover;
+    background-color: #29343a;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+#text-orange{
+    color: #E67505;
+} 
+.hero-container{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    /* margin-top: 100px; */
+    margin: auto;
+    padding: 1rem;
+    color: #fff;
+
+}  
+.hero-text{
+    display: flex;
+    font-family: "Rasa", serif;
+    font-weight: 700;
+    font-size: 64px;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+}
+.hero-text img{
+    width: 263px;
+    height: 215px;
+}
