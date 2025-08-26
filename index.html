@@ -1,41 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <nav>
-        <img src="/images/logo.png" alt="Logo" />
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">Contact Us</a></li>
-            <li><a href="#services">Become a Partner</a></li>
-        </ul>
-        <button>Get Started</button>
+      <img src="/images/logo.png" alt="Logo" />
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <input type="search" placeholder="Search..." class="search-input" />
     </nav>
     <main>
-        <!-- Hero Section -->
-         <section class="hero">
-            <div class="hero-container">
-            <div class="hero-text">
-                <h1>Skip The<span id="text-orange"> Queue</span><br>Shop <span id="text-orange">Smarter</span></h1>
-                <img src="./images/hero_logo.png" alt="Hero Logo"/>
-            </div>
-            <div>
-                <p>Say goodbye to long checkout lines — <span id="text-orange">scan</span>,<span id="text-orange"> pay</span>,
-                     and <span id="text-orange">go</span> with Nigeria’s first mobile-first self-<br/>checkout solution.</p>
-            </div>
-            <div>
-                <button>Get Started</button>
-                <button>See How It Works</button>
-            </div>
-            </div>
-            
-
-         </section>
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-container">
+          <div class="hero-text">
+            <h1>
+              Skip The<span id="text-orange"> Queue</span><br />Shop
+              <span id="text-orange">Smarter</span>
+            </h1>
+            <img src="./images/hero_logo.png" alt="Hero Logo" />
+          </div>
+          <div class="hero-paragraph">
+            <p>
+              Say goodbye to long checkout lines —
+              <span id="text-orange">scan</span>,<span id="text-orange">
+                pay</span
+              >, and <span id="text-orange">go</span> with Nigeria’s first
+              mobile-first self-<br />checkout solution.
+            </p>
+          </div>
+          <div class="hero-buttons">
+            <button>Get Started</button>
+            <button>See How It Works</button>
+          </div>
+        </div>
+      </section>
+      <!-- Features Section -->
+      <section class="features">
+        <div>
+          <h2>Our Features</h2>
+          <p>Explore the amazing features of our product.</p>
+        </div>
+        <div class="features-container">
+          <div class="features-card">
+            <h2>Feature 1</h2>
+            <p>Description of feature 1.</p>
+          </div>
+          <div class="features-card">
+            <h2>Feature 2</h2>
+            <p>Description of feature 2.</p>
+          </div>
+          <div class="features-card">
+            <h2>Feature 3</h2>
+            <p>Description of feature 3.</p>
+          </div>
+        </div>
+      </section>
+      <!-- FAQ's Section -->
+      <section class="faq">
+        <div class="faq-text">
+          <h2>Why Choose Us?</h2>
+          <p>We provide you with amazing perks and benefits</p>
+        </div>
+        <div class="faq-container">
+          <img src="./images/faq_img.png" alt="FAQ Image" />
+          <div class="faq-benefits">
+            <ul>
+              <li>Benefit 1</li>
+              <li>Benefit 2</li>
+              <li>Benefit 3</li>
+              <li>Benefit 4</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Users feedback section -->
+      <section class="user-feedback">
+        <div class="feedback-text">
+          <h2>What People Say About Us.</h2>
+          <p>
+            We value our customers' feedback and continuously strive to improve
+            our services.
+          </p>
+        </div>
+        <div class="feedback-floating-image">
+          <img src="./images/star_shape.png" alt="Star Shape" />
+          <img src="./images/star_shape.png" alt="Star Shape" />
+        </div>
+        <div class="feedback-container">
+          <div class="feedback-card top">
+            <p>"This product has changed the way I shop!"</p>
+            <span>- Happy Customer</span>
+          </div>
+          <div class="feedback-card middle">
+            <p>"I love the convenience of mobile checkout."</p>
+            <span>- Satisfied User</span>
+          </div>
+          <div class="feedback-card last">
+            <p>"A game changer for busy shoppers."</p>
+            <span>- Regular Shopper</span>
+          </div>
+        </div>
+      </section>
+      <!-- Newsletter Section -->
+      <section class="newsletter">
+        <div class="newsletter-container">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Stay updated with the latest news and offers.</p>
+          <form>
+            <input type="email" placeholder="Enter your email" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
     </main>
-</body>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-links">
+          <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#careers">Careers</a></li>
+              <li><a href="#blog">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#help">Help Center</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Follow Us</h3>
+            <ul class="social-media">
+              <li><a href="#facebook">Facebook</a></li>
+              <li><a href="#twitter">Twitter</a></li>
+              <li><a href="#instagram">Instagram</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+      </div>
+  </body>
 </html>
