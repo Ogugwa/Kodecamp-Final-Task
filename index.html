@@ -8,14 +8,16 @@
   </head>
   <body>
     <nav>
-      <img src="/images/logo.png" alt="Logo" />
+      <img src="./images/logo.png" alt="Logo" />
       <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#shop">Shop</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <input type="search" placeholder="Search..." class="search-input" />
+      <form>
+        <input type="search" placeholder="Search..." class="search-input" />
+      </form>
     </nav>
     <main>
       <!-- Hero Section -->
@@ -23,17 +25,17 @@
         <div class="hero-container">
           <div class="hero-text">
             <h1>
-              Skip The<span id="text-orange"> Queue</span><br />Shop
-              <span id="text-orange">Smarter</span>
+              Skip The<span class="text-orange"> Queue</span><br />Shop
+              <span class="text-orange">Smarter</span>
             </h1>
             <img src="./images/hero_logo.png" alt="Hero Logo" />
           </div>
           <div class="hero-paragraph">
             <p>
               Say goodbye to long checkout lines —
-              <span id="text-orange">scan</span>,<span id="text-orange">
+              <span class="text-orange">scan</span>,<span class="text-orange">
                 pay</span
-              >, and <span id="text-orange">go</span> with Nigeria’s first
+              >, and <span class="text-orange">go</span> with Nigeria’s first
               mobile-first self-<br />checkout solution.
             </p>
           </div>
@@ -115,16 +117,20 @@
         <div class="newsletter-container">
           <h2>Subscribe to Our Newsletter</h2>
           <p>Stay updated with the latest news and offers.</p>
-          <form>
+          <form class="newsletter-form">
+            <input type="text" placeholder="Enter your fullname" required />
             <input type="email" placeholder="Enter your email" required />
-            <button type="submit">Subscribe</button>
+            <button type="submit" id="newsletter-submit">Subscribe</button>
           </form>
         </div>
       </section>
     </main>
     <footer>
       <div class="footer-container">
-        <div class="footer-links">
+          <div class="footer-logo">
+            <img src="./images/hero_logo.png" alt="Hero Logo" />
+          </div>
+          <div class="footer-grouped-column">
           <div class="footer-column">
             <h3>Company</h3>
             <ul>
@@ -149,10 +155,12 @@
               <li><a href="#instagram">Instagram</a></li>
             </ul>
           </div>
+          </div>
         </div>
         <div class="footer-bottom">
           <p>&copy; 2024 Your Company. All rights reserved.</p>
         </div>
       </div>
+    </footer>
   </body>
 </html>
