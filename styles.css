@@ -27,7 +27,7 @@ nav img {
   width: 52px;
   height: auto;
 }
-nav ul {
+#nav-links {
   list-style: none;
   display: flex;
   gap: 1.5rem;
@@ -88,6 +88,7 @@ nav a:hover {
   margin-bottom: 1rem;
   text-align: center;
   font-size: 1rem;
+  padding: 0.5rem;
 }
 .hero-buttons {
   display: flex;
@@ -195,7 +196,6 @@ nav a:hover {
   transform: rotate(0.5turn);
   display: flex;
   flex-direction: column;
-  
 }
 .feedback-container {
   position: relative;
@@ -317,8 +317,13 @@ footer {
 }
 /* Media query for mobile */
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 2rem;
+  }
   .hero-text {
     font-size: 2rem;
+    flex-direction: column;
+    margin-bottom: 0.5rem;
   }
 
   .hero-text img {
@@ -345,7 +350,7 @@ footer {
     position: static;
   }
 
-  nav ul {
-    display: none; /* you can replace this with a burger menu later */
+  #nav-links {
+    display: none;
   }
 }
