@@ -1,0 +1,53 @@
+/* navbar.css */
+/* General default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Base nav styles */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 4px 16px 0px #0000001a;
+  backdrop-filter: blur(40px);
+  z-index: 1000;
+}
+nav img {
+  width: 52px;
+  height: auto;
+}
+#nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+nav a {
+  text-decoration: none;
+  color: #e67505;
+  font-weight: 500;
+  font-size: 18px;
+  font-style: normal;
+}
+nav a:hover {
+  color: #e67505;
+  /* text-decoration: none; */
+}
+.search-input {
+  border: 1px solid #e67505;
+  color: #e67505;
+  background: none;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  outline: none;
+}
+
+/* Mobile nav */
+/* The mobile nav is totally handled by javascript */
