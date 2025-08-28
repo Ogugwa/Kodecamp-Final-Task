@@ -190,12 +190,12 @@ nav a:hover {
 } */
 .feedback-floating-image {
   position: relative;
-  top: 200px;
-  right: 250px;
+  top: 250px;
+  right: 300px;
   transform: rotate(0.5turn);
   display: flex;
   flex-direction: column;
-  border: 2px solid red;
+  
 }
 .feedback-container {
   position: relative;
@@ -280,6 +280,10 @@ footer {
   width: 80%;
   margin: auto;
   gap: 2rem;
+}
+.footer-logo img {
+  min-width: 300px;
+  height: auto;
 }
 .footer-grouped-column {
   display: flex;
