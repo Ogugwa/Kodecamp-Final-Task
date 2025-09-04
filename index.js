@@ -103,7 +103,7 @@ const featureProduct = document.querySelector(".features-container");
       <img src="${product.images[0]}" alt="${product.title}" />
       <h2>${product.title}</h2>
       <h3>$${product.price}</h3>
-      <button class="add-to-cart">Add to Cart</button>
+      <button class="add-to-cart"><a href="./pages/add-to-cart/add.html">Add to Cart</a></button>
     </div>
   `).join("");
 })

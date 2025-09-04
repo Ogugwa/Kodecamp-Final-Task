@@ -53,6 +53,10 @@ body {
   cursor: pointer;
   margin: auto;
 }
+.add-to-cart a {
+  color: white;
+  text-decoration: none;
+}
 .add-to-cart:hover {
   background-color: darkblue;
 }

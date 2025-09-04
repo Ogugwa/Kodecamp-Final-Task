@@ -156,6 +156,10 @@ nav a:hover {
 .add-to-cart:hover {
   background-color: darkblue;
 }
+.add-to-cart a {
+  color: white;
+  text-decoration: none;
+}
 
 /* FAQ's Section */
 .faq {

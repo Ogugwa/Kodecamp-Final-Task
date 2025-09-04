@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <h2>${product.title}</h2>
           <p>${product.description}</p>
           <h3>$${product.price}</h3>
-          <button class="add-to-cart">Add to Cart</button>
+          <button class="add-to-cart"><a href="../add-to-cart/add.html">Add to Cart</a></button>
         </div>
       `).join("");
     })
