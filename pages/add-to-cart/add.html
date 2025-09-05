@@ -21,9 +21,29 @@
       </form>
     </nav>
     <main>
-      <h1>Add to Cart</h1>
+      <h1>Your Cart</h1>
       <p>Item has been added to your cart.</p>
       <a href="../shop-page/shop.html">Continue Shopping</a>
+      <div id="cart-container" class="cart-container"></div>
+
+      <!-- Summary -->
+      <aside id="cart-summary" class="cart-summary">
+        <div class="row">
+          <span>Subtotal</span>
+          <strong>$<span id="subtotal">0.00</span></strong>
+        </div>
+        <div class="row">
+          <span>Items</span>
+          <strong><span id="item-count">0</span></strong>
+        </div>
+        <div class="actions">
+          <a href="../shop-page/shop.html" class="btn btn-light"
+            >Continue Shopping</a
+          >
+          <button id="clear-cart" class="btn btn-danger">Clear Cart</button>
+          <button class="btn btn-primary">Checkout</button>
+        </div>
+      </aside>
     </main>
   </body>
 </html>

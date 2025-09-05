@@ -11,3 +11,93 @@ main h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
+.cart-container {
+  display: grid;
+  gap: 12px;
+  margin: 16px 0;
+}
+.cart-item {
+  display: grid;
+  grid-template-columns: 64px 1fr 100px 100px 40px;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #eee;
+  border-radius: 10px;
+  background: #fff;
+}
+.cart-item .thumb {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.cart-item .title {
+  margin: 0 0 4px;
+  font-size: 14px;
+}
+.cart-item .price,
+.cart-item .line-total {
+  font-weight: 600;
+}
+.cart-item .qty input {
+  width: 60px;
+}
+.cart-item .remove {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.cart-summary {
+  margin-top: 20px;
+  max-width: 420px;
+  padding: 16px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background: #fafafa;
+}
+.cart-summary .row {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+.cart-summary .actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+.btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #111;
+  color: #fff;
+}
+.btn-danger {
+  background: #e74c3c;
+  color: #fff;
+}
+.btn-light {
+  background: #fff;
+  border-color: #ddd;
+}
+.badge {
+  display: inline-block;
+  min-width: 20px;
+  padding: 2px 6px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+}
+@media (max-width: 640px) {
+  .cart-item {
+    grid-template-columns: 48px 1fr 80px 80px 32px;
+  }
+}
