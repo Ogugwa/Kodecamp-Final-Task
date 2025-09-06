@@ -32,6 +32,20 @@ function addToCart(product) {
     });
   }
   saveCart(cart);
+  function showNotification(message) {
+    let notif = document.createElement("div");
+    notif.className = "notification";
+    notif.textContent = message;
+    document.body.appendChild(notif);
+
+    requestAnimationFrame(() => notif.classList.add("show"));
+
+    setTimeout(() => {
+      notif.classList.remove("show");
+      notif.addEventListener("transitionend", () => notif.remove());
+    }, 2000);
+  }
+  showNotification(`${product.title} added to cart!`);
 }
 
 function removeFromCart(id) {

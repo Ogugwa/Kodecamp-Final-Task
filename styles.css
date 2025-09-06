@@ -10,47 +10,7 @@ body {
   line-height: 1.6;
   color: #29343a;
 }
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  color: #fff;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  box-shadow: 0px 4px 16px 0px #0000001a;
-  backdrop-filter: blur(40px);
-  z-index: 1000;
-}
-nav img {
-  width: 52px;
-  height: auto;
-}
-#nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-nav a {
-  text-decoration: none;
-  color: #e67505;
-  font-weight: 500;
-  font-size: 18px;
-  font-style: normal;
-}
-nav a:hover {
-  color: #e67505;
-  /* text-decoration: none; */
-}
-.search-input {
-  border: 1px solid #e67505;
-  color: #e67505;
-  background: none;
-  padding: 0.5rem 1rem;
-  border-radius: 12px;
-  outline: none;
-}
+/* Navbar styling is handled by the navbar.css file */
 /* Hero styling */
 .hero {
   background: url("./images/hero_bg_img.png") no-repeat center center/cover;
@@ -180,13 +140,7 @@ nav a:hover {
   width: 100%;
   border-radius: 16px;
 }
-/* .faq-benefits {
-  display: flex;
-  max-width: 40vw;
-  width: 600px;
-  flex-direction: column;
-  padding: 1rem;
-} */
+
 .faq-benefits ul {
   list-style: none;
   text-align: left;
@@ -213,10 +167,7 @@ nav a:hover {
   max-width: 600px;
   margin: 0 auto 2rem;
 }
-/* .feedback-text h2,
-.feedback-text p {
-  margin-bottom: 1rem;
-} */
+
 .feedback-floating-image {
   position: relative;
   top: 250px;
@@ -264,10 +215,7 @@ nav a:hover {
   background: #f9f9f9;
   text-align: center;
 }
-/* .newsletter-container {
-  margin: auto;
-  gap: 1rem;
-} */
+
 .newsletter-form {
   box-shadow: 0px 4px 8px 0px #0000001a;
   display: flex;
