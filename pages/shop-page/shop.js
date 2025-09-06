@@ -1,7 +1,12 @@
 import { initNavbar } from "../../ReusableModules/navModule.js";
+import {
+  setupCartButtons,
+  updateCartBadge,
+} from "../../ReusableModules/cartModule.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavbar();
+  updateCartBadge();
 
   // Making API calls for the product page
   const apiUrl = "https://api.escuelajs.co/api/v1/products";

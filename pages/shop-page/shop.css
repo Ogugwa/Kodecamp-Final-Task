@@ -60,6 +60,7 @@ body {
 .add-to-cart:hover {
   background-color: darkblue;
 }
+
 /* Media query for responsiveness */
 @media (max-width: 768px) {
   #product-list {

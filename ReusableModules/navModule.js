@@ -38,6 +38,12 @@ export function initNavbar() {
       hamburger.style.display = "block";
       searchBar.style.display = "none";
       navLinks.style.left = "-100%"; // Hide menu by default on mobile
+      // Inserting the cart icon to display on mobile and appending it to the nav directly not navlinks
+      const cartIcon = document.createElement("a");
+      cartIcon.href = "./pages/add-to-cart/add.html";
+      cartIcon.className = "cart-icon";
+      cartIcon.innerHTML = `<img src="/images/cart-icon.svg" alt="Cart Icon" />`;
+      nav.appendChild(cartIcon);
       mobileList(); // This allows the desktop styles to not be changed
     } else {
       hamburger.style.display = "none";

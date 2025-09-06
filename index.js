@@ -1,8 +1,12 @@
 import { initNavbar } from "./ReusableModules/navModule.js";
-import { setupCartButtons } from "./ReusableModules/cartModule.js";
+import {
+  setupCartButtons,
+  updateCartBadge,
+} from "./ReusableModules/cartModule.js";
 
 document.addEventListener("DOMContentLoaded", () => {
   initNavbar();
+  updateCartBadge();
 
   // Making API calls to fetch data for the features page
   const featureProduct = document.querySelector(".features-container");
